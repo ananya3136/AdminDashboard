@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#login-page, #dashboard {
+    text-align: center;
+    padding: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+.login-form {
+    display: inline-block;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 200px;
+}
+
+.login-form button {
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#teams {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.team {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 200px;
+    text-align: left;
+}
+
+#team-performance {
+    margin-top: 20px;
+}
+
+canvas {
+    max-width: 300px;
+    height: 300px;
+    margin: auto;
+    display: block;
+}
+
+
+/* Existing styles... */
+
+#calendar {
+    margin-top: 20px;
+}
+
+#calendarTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#calendarTable th, #calendarTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    width: 14.28%; /* Divide into 7 days */
+}
+
+.sick-leave {
+    background-color: #ffcccc; /* Red for sick leaves */
+}
+
+.paid-leave {
+    background-color: #ccffcc; /* Green for paid leaves */
+}
+
+.attended {
+    background-color: #cce5ff; /* Blue for attended days */
+}
+
+.weekend {
+    background-color: #e0e0e0; /* Gray for weekends */
+}
+
+.empty {
+    background-color: #f4f4f4;
+}
+
+/* Legend styling */
+#legend {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#legend h4 {
+    margin-bottom: 5px;
+}
+
+.legend-item {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* Legend color representations */
+.legend-item.sick-leave {
+    background-color: #ffcccc;
+}
+
+.legend-item.paid-leave {
+    background-color: #ccffcc;
+}
+
+.legend-item.attended {
+    background-color: #cce5ff;
+}
+
+.legend-item.weekend {
+    background-color: #e0e0e0;
+}
+
+
+/* Logout button on the top right */
+#logout-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#logout-button:hover {
+    background-color: #d32f2f;
+}
